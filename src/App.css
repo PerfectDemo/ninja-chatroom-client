@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.hall {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0 .3em 0em .2em; 
+  overflow-y: auto;
+  height: 800px;
+}
+
+.input {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+}
+
+.chatroom {
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+}
+
+.message-list {
+  height: 800px;  
+  flex-shrink: 0;
+  overflow-y: auto;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+}
+
+.message {
+  display: flex; 
+  text-align: center;
+  margin-bottom: 5em;
+  height: 4em;
+  flex: 0;
+  flex-shrink: 0;
+}
+
+.message:first-child {
+  margin-top: 2em;
+}
+ 
+
+.message-left {
+  align-self: flex-start; 
+}
+
+.message-left > div {
+  margin-left: 1em;
+}
+
+.message-right {
+  align-self: flex-end; 
+}
+
+.message-right > div {
+  margin-right: 1em;
+}
